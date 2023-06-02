@@ -1,0 +1,131 @@
+INFO	[2023-05-06 12:03:27:366] <2060244> START INIPHP cancel (NV5053-20190404)(OS:Linux5.4.0-107-generic,PHP:7.4.33)
+DEBUG	[2023-05-06 12:03:27:366] <2060244> inipayhome:/home/sleepfriend/public_html/shop/inicis
+DEBUG	[2023-05-06 12:03:27:366] <2060244> debug:false
+DEBUG	[2023-05-06 12:03:27:366] <2060244> encMethod:openssl
+DEBUG	[2023-05-06 12:03:27:366] <2060244> type:cancel
+DEBUG	[2023-05-06 12:03:27:366] <2060244> mid:SIRslfrnd1
+DEBUG	[2023-05-06 12:03:27:366] <2060244> admin:1111
+DEBUG	[2023-05-06 12:03:27:366] <2060244> tid:StdpayCARDSIRslfrnd120230504131242617268
+DEBUG	[2023-05-06 12:03:27:366] <2060244> cancelmsg:ºÓ«Œ∏Ù øÓøµ¿⁄ Ω¬¿Œ √Îº“
+INFO	[2023-05-06 12:03:27:366] <2060244> Check Field OK
+INFO	[2023-05-06 12:03:27:366] <2060244> INPUT TID > StdpayCARDSIRslfrnd120230504131242617268
+INFO	[2023-05-06 12:03:27:366] <2060244> PI PUB KEY LOAD OK []
+INFO	[2023-05-06 12:03:27:373] <2060244> PG PUB KEY LOAD OK [30]
+ERROR	[2023-05-06 12:03:27:373] <2060244> ÏÉÅÏ†êÍ∞úÏù∏ÌÇ§ Î°úÎìúÏò§Î•ò
+INFO	[2023-05-06 12:03:27:378] <2060244> END cancel [TX9301|ÏÉÅÏ†êÍ∞úÏù∏ÌÇ§ Î°úÎìúÏò§Î•ò] Laptime:[0.012sec]
+INFO	[2023-05-06 12:03:27:378] <2060244> ===============================================================
+INFO	[2023-05-06 12:43:20:102] <2063080> START INIPHP cancel (NV5053-20190404)(OS:Linux5.4.0-107-generic,PHP:7.4.33)
+DEBUG	[2023-05-06 12:43:20:102] <2063080> inipayhome:/home/sleepfriend/public_html/shop/inicis
+DEBUG	[2023-05-06 12:43:20:102] <2063080> debug:false
+DEBUG	[2023-05-06 12:43:20:102] <2063080> encMethod:openssl
+DEBUG	[2023-05-06 12:43:20:102] <2063080> type:cancel
+DEBUG	[2023-05-06 12:43:20:102] <2063080> mid:SIRslfrnd1
+DEBUG	[2023-05-06 12:43:20:102] <2063080> admin:1111
+DEBUG	[2023-05-06 12:43:20:102] <2063080> tid:INIMX_CARDSIRslfrnd120230506122938295001
+DEBUG	[2023-05-06 12:43:20:102] <2063080> cancelmsg:ºÓ«Œ∏Ù øÓøµ¿⁄ Ω¬¿Œ √Îº“
+INFO	[2023-05-06 12:43:20:102] <2063080> Check Field OK
+INFO	[2023-05-06 12:43:20:102] <2063080> INPUT TID > INIMX_CARDSIRslfrnd120230506122938295001
+INFO	[2023-05-06 12:43:20:102] <2063080> PI PUB KEY LOAD OK []
+INFO	[2023-05-06 12:43:20:103] <2063080> PG PUB KEY LOAD OK [30]
+ERROR	[2023-05-06 12:43:20:103] <2063080> ÏÉÅÏ†êÍ∞úÏù∏ÌÇ§ Î°úÎìúÏò§Î•ò
+ERROR	[2023-05-06 12:43:20:103] <2063080> this->homedir=/home/sleepfriend/public_html/shop/inicis, this->mid=SIRslfrnd1, this->admin=1111, this->mkey=
+INFO	[2023-05-06 12:43:20:105] <2063080> END cancel [TX9301|ÏÉÅÏ†êÍ∞úÏù∏ÌÇ§ Î°úÎìúÏò§Î•ò] Laptime:[0.003sec]
+INFO	[2023-05-06 12:43:20:105] <2063080> ===============================================================
+INFO	[2023-05-06 12:49:54:584] <2063676> START INIPHP cancel (NV5053-20190404)(OS:Linux5.4.0-107-generic,PHP:7.4.33)
+DEBUG	[2023-05-06 12:49:54:584] <2063676> inipayhome:/home/sleepfriend/public_html/shop/inicis
+DEBUG	[2023-05-06 12:49:54:584] <2063676> debug:false
+DEBUG	[2023-05-06 12:49:54:584] <2063676> encMethod:openssl
+DEBUG	[2023-05-06 12:49:54:584] <2063676> type:cancel
+DEBUG	[2023-05-06 12:49:54:584] <2063676> mid:SIRslfrnd1
+DEBUG	[2023-05-06 12:49:54:584] <2063676> admin:1111
+DEBUG	[2023-05-06 12:49:54:584] <2063676> tid:INIMX_CARDSIRslfrnd120230506124816695571
+DEBUG	[2023-05-06 12:49:54:584] <2063676> cancelmsg:ºÓ«Œ∏Ù øÓøµ¿⁄ Ω¬¿Œ √Îº“
+INFO	[2023-05-06 12:49:54:585] <2063676> Check Field OK
+INFO	[2023-05-06 12:49:54:585] <2063676> INPUT TID > INIMX_CARDSIRslfrnd120230506124816695571
+INFO	[2023-05-06 12:49:54:585] <2063676> PI PUB KEY LOAD OK []
+INFO	[2023-05-06 12:49:54:585] <2063676> PG PUB KEY LOAD OK [30]
+INFO	[2023-05-06 12:49:54:586] <2063676> MERCHANT PRIV KEY LOAD OK
+INFO	[2023-05-06 12:49:54:586] <2063676> MERCHANT PUB KEY LOAD OK [0]
+DEBUG	[2023-05-06 12:49:54:586] <2063676> MAKE ENCRYPT OK[<?xml version="1.0" encoding="UTF-8"?>
+<CancelInfo>
+	  <CancelTID>INIMX_CARDSIRslfrnd120230506124816695571</CancelTID>
+	  <CancelMsg urlencode="1">%BC%EE%C7%CE%B8%F4+%BF%EE%BF%B5%C0%DA+%BD%C2%C0%CE+%C3%EB%BC%D2</CancelMsg>
+	  <CancelReason/>
+	  <RefundAcctNum/>
+	  <RefundBankCode/>
+	  <RefundAcctName/></CancelInfo>]
+INFO	[2023-05-06 12:49:54:586] <2063676> MAKE BODY OK
+INFO	[2023-05-06 12:49:54:587] <2063676> SIGN OK
+INFO	[2023-05-06 12:49:54:587] <2063676> MAKE HEAD OK
+DEBUG	[2023-05-06 12:49:54:587] <2063676> MSG_TO_PG:[0105100175D SHA1                   0                                      300420SIRslfrnd1                   0INIMX_CARDSIRslfrnd120230506124816695571<?xml version="1.0" encoding="UTF-8"?>
+<INIpay>
+	  <CancelInfo>
+	    <SessionKey>QqcIzRIpO0gwkyQgxbe0It98Usv+2yF15wVLgIo4lavSDS8Q8CdW3Y8+xK5X6nN0
+9+uK9gk28m+FoM64MmrwKpZGKx6xPL/v/HemkRVzVRG/vq8Ip9JF3D8lQYQLfyEz
+I3TvYQ476RBN6DMa6ZkcQFuluCg36ryDm/k4dPTlvgz3QxFWDiyWYw==
+</SessionKey>
+	    <Encrypted>yow1sIBlReSMjwqMaLU1HaiB0i53a8GJXga5GFFLJVzlLbBwzokARN6cSqcFtpRO
+ZV4Sse1KrzIVRk7in38SuA6V1CFHdE2LRB9yUeL6lufB+RyCj6LlEQY3QSqCjDX+
+Ue6O8bhpqcbwVU79FSKYsO/rseIa8B3gD0+4yY3TNHsdtcji9TVIIDj2HEX15Dld
+YDDT26IxQpTdF9jD3LiBSFBJZVeZD9TkpXeyaCecTx2SAiKtDsIUaijMNYlNIZZI
+qe0/dKS7lB7HbDQ0Mc2DfaKhN7HsNLq3cSZsEMa/HFfmyE+a/Zm79PGUiT3WYVFt
+vUxHOKxBegmPRyxp9hgd6UAK+SrGhBDdv6vNoB5Z070/7W0RqOe0XeeR5R0TAq4x
+Fuu4WvQyohcJ50Bt1ZrQVO5rYHANIMqLiNac+EpabDk=
+</Encrypted></CancelInfo>
+	  <ReservedInfo>
+	    <MReserved1/>
+	    <MReserved2/>
+	    <MReserved3/></ReservedInfo>
+	  <ManageInfo>
+	    <Language/>
+	    <URL/>
+	    <TXVersion>NV5053B20190404canceLinux     PHPchkfake   5.4.0-107-genericPHP:7.4.33   </TXVersion>
+	    <TXUserID/>
+	    <TXRegNum/></ManageInfo></INIpay>AGONbi2KLAmrVlZF52qC8zX1JpwMkJP9lAGWrbc3cv1QvLK6d7QsWRPVGV4X+YmU
+uoiJHl7ODUrJyDdeacpLQBgA4c+YMLTDJ6EmhbFw+qYkKV6ynHRk765EFiAajnIR
+jg4unydU8CvjVlaUit2kWVKsmmPLU2ogVgq9Z5b2IuUF
+]
+INFO	[2023-05-06 12:49:54:597] <2063676> DNS LOOKUP OK(formpg.inicis.com, 203.238.37.3:34049) laptime:0.009
+INFO	[2023-05-06 12:49:54:598] <2063676> SOCKET CONNECT OK
+INFO	[2023-05-06 12:49:54:598] <2063676> SEND OK
+INFO	[2023-05-06 12:49:54:943] <2063676> RECV OK
+INFO	[2023-05-06 12:49:54:943] <2063676> MSG_FROM_PG:[0093300175D SHA1                   0                                      300430SIRslfrnd1                   0INIMX_CARDSIRslfrnd120230506124816695571<?xml version="1.0" encoding="UTF-8"?><INIpay>
+<CancelInfo>
+<ResultCode>120000</ResultCode>
+<ResultMsg urlencode="1">%C1%A4%BB%F3%C3%B3%B8%AE%B5%C7%BE%FA%BD%C0%B4%CF%B4%D9.</ResultMsg>
+<SessionKey>ADdItqnWrbV/mHsofi5Zr6NBL+ffK0zzj4tlW1OQB1CjlO5LLma08RtiJa2z8CwX
+twXBIFFmSxCYO7lsPUM8SPDc4eHUX6diK48qH4nRoBIo/Gwk/Ua0ZgmkPl+Y0Xzv
+34Mo+kVjbx1BZK8fkVl3zDnPREjTrt6CXkt575Ar8MS+bzLQByPMNSw=
+</SessionKey>
+<Encrypted>FXMoqS19p87OMrEofHcjLG+EvlAgMTX+lgxxy5SeR/HR91hkkoWqVgRUHcLIhHFQ
+UawHrWdRJ8zqh0UJzDXwaCYUUtrDBCdQ4KIRu6crnXJS0RWAXSMhugg0KvBwFjQA
+gRtrCLsLJUQLVBfsJOw0g5N4mPgoCwSMXUkc8EnWWKg8BnE8SndDdYldBknNymn5
+15PLQ1DIpK6y3NDMe5YOVQ5Uq46Sr+671a0Y6H2PbzVVYNG+A6X98gzJeTJfRYEz
+gEXn9VcfKfF/LY7G+ncYG1xZC20DoiSFqHZLB71C7E6JhMrHaifoOTTEmvv+dD8P
+nXTB+G3OBA5lqOtStVYZm9wXUdb08X+T
+</Encrypted>
+</CancelInfo>
+<ManageInfo/>
+<ReservedInfo>
+<MReserved1 urlencode="1"/>
+<MReserved2 urlencode="1"/>
+<MReserved3 urlencode="1"/>
+</ReservedInfo>
+</INIpay>
+r/n/zDQGPnOHlLyNJuu2kGj93eVZba4X+6fDTSaz5BQIG4cEZYAsXEAcEB8hCrmy
+KwFoE6pohz0tayLeDt9FUssREQC9vW1GLhAjLjxqc597MZHk/ZBWtrW7afyf4wKX
+sl/xIBxUADZxukqzc5r/2x2q5OciMiVQ+CoMyvta2Do=
+]
+INFO	[2023-05-06 12:49:54:943] <2063676> VERIFY OK
+INFO	[2023-05-06 12:49:54:943] <2063676> PARSE HEAD OK
+INFO	[2023-05-06 12:49:54:944] <2063676> PARSE BODY OK
+INFO	[2023-05-06 12:49:54:944] <2063676> DECRYPT OK
+DEBUG	[2023-05-06 12:49:54:944] <2063676> DECRYPT MSG:[<?xml version="1.0" encoding="UTF-8"?><CancelInfo>
+<CancelDate>20230506</CancelDate>
+<CancelTime>124954</CancelTime>
+<ResultCode>120000</ResultCode>
+<ResultMsg urlencode="1">%C1%A4%BB%F3%C3%B3%B8%AE%B5%C7%BE%FA%BD%C0%B4%CF%B4%D9.</ResultMsg>
+</CancelInfo>]
+INFO	[2023-05-06 12:49:54:944] <2063676> DECRYPT PARSE OK
+INFO	[2023-05-06 12:49:54:944] <2063676> END cancel ¡§ªÛ√≥∏Æµ«æ˙Ω¿¥œ¥Ÿ. Laptime:[0.36sec]
+INFO	[2023-05-06 12:49:54:944] <2063676> ===============================================================

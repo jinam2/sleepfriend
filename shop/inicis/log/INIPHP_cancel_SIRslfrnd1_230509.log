@@ -1,0 +1,94 @@
+INFO	[2023-05-09 09:40:14:279] <2363034> START INIPHP cancel (NV5053-20190404)(OS:Linux5.4.0-107-generic,PHP:7.4.33)
+DEBUG	[2023-05-09 09:40:14:279] <2363034> inipayhome:/home/sleepfriend/public_html/shop/inicis
+DEBUG	[2023-05-09 09:40:14:279] <2363034> debug:false
+DEBUG	[2023-05-09 09:40:14:279] <2363034> encMethod:openssl
+DEBUG	[2023-05-09 09:40:14:279] <2363034> type:cancel
+DEBUG	[2023-05-09 09:40:14:279] <2363034> mid:SIRslfrnd1
+DEBUG	[2023-05-09 09:40:14:279] <2363034> admin:1111
+DEBUG	[2023-05-09 09:40:14:279] <2363034> tid:INIMX_CARDSIRslfrnd120230509091326115844
+DEBUG	[2023-05-09 09:40:14:279] <2363034> cancelmsg:¼îÇÎ¸ô ¿î¿µÀÚ ½ÂÀÎ Ãë¼Ò
+INFO	[2023-05-09 09:40:14:279] <2363034> Check Field OK
+INFO	[2023-05-09 09:40:14:279] <2363034> INPUT TID > INIMX_CARDSIRslfrnd120230509091326115844
+INFO	[2023-05-09 09:40:14:279] <2363034> PI PUB KEY LOAD OK []
+INFO	[2023-05-09 09:40:14:279] <2363034> PG PUB KEY LOAD OK [30]
+INFO	[2023-05-09 09:40:14:280] <2363034> MERCHANT PRIV KEY LOAD OK
+INFO	[2023-05-09 09:40:14:280] <2363034> MERCHANT PUB KEY LOAD OK [0]
+DEBUG	[2023-05-09 09:40:14:280] <2363034> MAKE ENCRYPT OK[<?xml version="1.0" encoding="UTF-8"?>
+<CancelInfo>
+	  <CancelTID>INIMX_CARDSIRslfrnd120230509091326115844</CancelTID>
+	  <CancelMsg urlencode="1">%BC%EE%C7%CE%B8%F4+%BF%EE%BF%B5%C0%DA+%BD%C2%C0%CE+%C3%EB%BC%D2</CancelMsg>
+	  <CancelReason/>
+	  <RefundAcctNum/>
+	  <RefundBankCode/>
+	  <RefundAcctName/></CancelInfo>]
+INFO	[2023-05-09 09:40:14:280] <2363034> MAKE BODY OK
+INFO	[2023-05-09 09:40:14:281] <2363034> SIGN OK
+INFO	[2023-05-09 09:40:14:281] <2363034> MAKE HEAD OK
+DEBUG	[2023-05-09 09:40:14:281] <2363034> MSG_TO_PG:[0105100175D SHA1                   0                                      300420SIRslfrnd1                   0INIMX_CARDSIRslfrnd120230509091326115844<?xml version="1.0" encoding="UTF-8"?>
+<INIpay>
+	  <CancelInfo>
+	    <SessionKey>nvkupoUkCYfA2Ld7NyVADqlpUWqd3FjsLk+3crDHWdlYGfvKG6Y77gwsShuCv22C
+DE2XNuG1TeQXZ/ObgoOwoLgwmDn0Ae1PS/2hzbcwvh0VAlVyC3hKS8NKjTdDYO0Q
+n0nvuJRTNkHmQzTV9uct14GwV1P8y1qDk10DNAELUpq7JWeG3y/fpQ==
+</SessionKey>
+	    <Encrypted>Ib9ezsgUDf6AwC+r4gJCPgCSjHzL+loPVJvDuA+zP8AG5vRatlHz/xdFT0/wR/QL
+3Qmi3ufsYYWl1ktAK1bQfCN5yKDfCqCup8I8JXsDf91yfiNT19bqVBSN5/is1mdp
+uuxWd8g62h944+aygScgjJq5HuB35eApDbhZU8HGYquDh6v+RhkgmvzLJ6xCB5wU
+SZ5fS9tjUKPuBFatkmcG52RaM4gGV3OsDLGLI1UNrbxA3Bm16tv/KD4GHBKQQobI
+v8yfYLtftf/mQHbUEDgkfCKz/soPGceZlKI207KQ1NbuIVZ/3QL0HOCQUIA47HTL
+HpRR7PN3eOGuc3MG0srC+rWLXTf1FHeRsVlE0JDuZGs/71+4rpUvMbydGzSjpCSQ
+JDN76Lt0aTfnEKnfpR5rc5+pULo1WkDYhubtEXwgBgY=
+</Encrypted></CancelInfo>
+	  <ReservedInfo>
+	    <MReserved1/>
+	    <MReserved2/>
+	    <MReserved3/></ReservedInfo>
+	  <ManageInfo>
+	    <Language/>
+	    <URL/>
+	    <TXVersion>NV5053B20190404canceLinux     PHPchkfake   5.4.0-107-genericPHP:7.4.33   </TXVersion>
+	    <TXUserID/>
+	    <TXRegNum/></ManageInfo></INIpay>AQbT/v0KsI6I/sE6Vhtndv2BeIY7T5iVHRxl8gVbiOm+Xx6k4iuFQow5hcGW/b+f
+ujqPuKvXUDzf+CNychn85EWAkj6yqsTzfpIC80aguqyo48uljAeVRr1HHH/kq1TF
+cvb1vUGT6zgDXZ8cEeIftSaqJGuOQwrmvYbr+F0vAzXJ
+]
+INFO	[2023-05-09 09:40:14:291] <2363034> DNS LOOKUP OK(formpg.inicis.com, 203.238.37.3:34049) laptime:0.01
+INFO	[2023-05-09 09:40:14:293] <2363034> SOCKET CONNECT OK
+INFO	[2023-05-09 09:40:14:293] <2363034> SEND OK
+INFO	[2023-05-09 09:40:14:372] <2363034> RECV OK
+INFO	[2023-05-09 09:40:14:372] <2363034> MSG_FROM_PG:[0078000175D SHA1                   0                                      300430SIRslfrnd1                   0INIMX_CARDSIRslfrnd120230509091326115844<?xml version="1.0" encoding="UTF-8"?><INIpay>
+<CancelInfo>
+<ResultCode>500626</ResultCode>
+<ResultMsg urlencode="1">%B1%E2+%C3%EB%BC%D2+%B0%C5%B7%A1</ResultMsg>
+<SessionKey>AGwQHeW2HYQL8SbK90eSxL5Y88kwcouN5yZhRpposwOw31l4r08m+ZAge78RaRG+
+HpudHHklaQyg6+Jnwf1mBQyqlYUGYo/kIP1fPN9iRYoKxvaOYCoSjrq28d8Ilj1F
+TNKZF5AwzMsJW2oROxnmYE/OpjpyNOUiE0gJCRcxtLo3mCVEsV2Z0Oo=
+</SessionKey>
+<Encrypted>Uyuw9rEKtDkMdFqg9xTrr+Iaa9BGO6JvPw2trWg+DCEtLJHtm80EZE6t1nKdYvgi
+4S9zhzGFGhdNLXjAHQLgpWtZ7kLBI42W7E90wWjcyQ2F2eOxbRXno5FeenctJiZq
+626Zowx9YPGia8MM3js71ewfcaW/neKrj5S0JKX7bC3G61c6rpacZhvfLfIrSO51
+lJaOsSiafi59mZN8hEFTGCWWmBXXTyfU
+</Encrypted>
+</CancelInfo>
+<ManageInfo/>
+<ReservedInfo>
+<MReserved1 urlencode="1"/>
+<MReserved2 urlencode="1"/>
+<MReserved3 urlencode="1"/>
+</ReservedInfo>
+</INIpay>
+4JaWMJXFjnOncI9QfyIIYtTqpheZgcahgLSYRT18P6+YkbjM8HNIXZDmUzQfXYlu
+fOE4IN3ZWN+fnxMnhgjml/5x75l8COjZfsnId2deAFoXjsBE/u6Vdcu04H/h2iGS
+mQmbtJuvE+t/pTENyKVE9aIUFqrdB6dMvVVQ2PFI4mQ=
+]
+INFO	[2023-05-09 09:40:14:372] <2363034> VERIFY OK
+INFO	[2023-05-09 09:40:14:373] <2363034> PARSE HEAD OK
+INFO	[2023-05-09 09:40:14:373] <2363034> PARSE BODY OK
+INFO	[2023-05-09 09:40:14:374] <2363034> DECRYPT OK
+DEBUG	[2023-05-09 09:40:14:374] <2363034> DECRYPT MSG:[<?xml version="1.0" encoding="UTF-8"?><CancelInfo>
+<ResultCode>500626</ResultCode>
+<ResultMsg urlencode="1">%B1%E2+%C3%EB%BC%D2+%B0%C5%B7%A1</ResultMsg>
+</CancelInfo>]
+INFO	[2023-05-09 09:40:14:374] <2363034> DECRYPT PARSE OK
+INFO	[2023-05-09 09:40:14:374] <2363034> END cancel [500626|±â Ãë¼Ò °Å·¡] Laptime:[0.095sec]
+INFO	[2023-05-09 09:40:14:374] <2363034> ===============================================================

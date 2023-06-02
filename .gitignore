@@ -1,0 +1,11 @@
+.vscode/
+.ftpquota
+error_log
+_test_/
+docs/
+data/
+images/
+img/
+install/
+plugin/
+publish/
