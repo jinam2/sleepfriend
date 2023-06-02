@@ -16,13 +16,14 @@ include_once(G5_PLUGIN_PATH.'/jquery-ui/datepicker.php');
  */
 
 $today = date("Y-m-d");
+//  20230602 - edited by jinam23, P.END_DATE 정렬 조건 추가 ㅠㅠ
 $sql = "select P.*, C.REAL_START_DATE, C.REAL_EXPIRE_DATE,
           C.PRODUCT_FAMILY, C.TYPE_OF_INSURANCE, C.DEVICE_MODEL_NAME
         from SF_PRESCRIPTION P
             inner join SF_CONTRACT C on(P.CONTRACT_ID = C.ID)
         where P.PATIENT_ID = '{$member['salesforce_id']}'        
           and C.REAL_EXPIRE_DATE >= '{$today}'
-        order by C.REAL_EXPIRE_DATE DESC 
+        order by C.REAL_EXPIRE_DATE, P.END_DATE DESC 
         limit 1 
 ";
 
