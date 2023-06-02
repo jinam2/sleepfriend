@@ -19,7 +19,7 @@ $list=[];
 
 if($doc_type == 1) {
     //  jinam23 - 230524 edited ORDER BY 
-    $sql = "SELECT * FROM SF_CONTRACT WHERE PATIENT_ID='{$member['salesforce_id']}' AND CONTRACT_PDF is not null ORDEY BY pdate_datetime DESC";
+    $sql = "SELECT * FROM SF_CONTRACT WHERE PATIENT_ID='{$member['salesforce_id']}' AND CONTRACT_PDF is not null ORDER BY REAL_EXPIRE_DATE DESC";
     $rows = sql_fetch_all($sql);
 
     foreach($rows as $row) {
@@ -52,52 +52,25 @@ if($doc_type == 1) {
     //  $sql = "SELECT * FROM g5_shop_rental WHERE mb_id='{$member['mb_id']}' AND od_file4 <> '' ORDER BY od_datetime DESC";
     //  jinam23 - 230524 edited  , INSPECTION_PDF -> PRESCRIPTION_PDF, prescription_png.php 처방전으로 테스트
     //  jinam23 - test sample 
-    /**  
+ 
+    //  230602 - jinam23, sfp.INSPECTION_PDF 조건 제외 
     $sql = "SELECT 
-            sfp.ID, 
-            sfc.TYPE_OF_INSURANCE, 
-            sfp.MEDICAL_DEPARTMENT
-        FROM 
-            SF_CONTRACT sfc,
-            SF_PRESCRIPTION sfp
-        WHERE
-            // sfc.PATIENT_ID = "0012w00000xs5o2AAA" AND
-            sfc.PATIENT_ID = '{$member['salesforce_id']}' AND
-            sfc.ID = sfp.CONTRACT_ID AND
-            sfp.PRESCRIPTION_PDF is not null
-        ORDER BY
-            sfp.update_datetime DESC" ;
-    $rows = sql_fetch_all($sql);
-    foreach($rows as $row) {
-        $download_link = '' ;
-        $view_link = "<a href='/mypage/prescription_png.php?ID={$row['ID']}' target='_blank'>바로보기 <img src='/images/my_icon_zoom.png'></a>";
-        $doc_title = $row['MEDICAL_DEPARTMENT'];
-        $category = $row['TYPE_OF_INSURANCE'];
-        $list[] = [
-            'category' => $category,
-            'doc_title' => $doc_title,
-            'download_link' => $download_link,
-            'view_link' => $view_link,
-        ];
-    }
-    */    
-    $sql = "SELECT 
-            sfp.ID, 
-            sfc.TYPE_OF_INSURANCE, 
-            sfp.MEDICAL_DEPARTMENT
+            sfp.ID, sfc.TYPE_OF_INSURANCE, sfp.MEDICAL_DEPARTMENT, IFNULL(sfp.INSPECTION_PDF, 0) 
         FROM 
             SF_CONTRACT sfc,
             SF_PRESCRIPTION sfp
         WHERE
             sfc.PATIENT_ID = '{$member['salesforce_id']}' AND
-            sfc.ID = sfp.CONTRACT_ID AND
-            sfp.INSPECTION_PDF is not null
+            sfc.ID = sfp.CONTRACT_ID 
         ORDER BY
             sfp.update_datetime DESC" ;
     $rows = sql_fetch_all($sql);
     foreach($rows as $row) {
         $download_link = '' ;
-        $view_link = "<a href='/mypage/inspection_png.php?ID={$row['ID']}' target='_blank'>바로보기 <img src='/images/my_icon_zoom.png'></a>";
+        $view_link = "" ;
+        if( $row['INSPECTION_PDF']!=0 ) {
+            $view_link = "<a href='/mypage/inspection_png.php?ID={$row['ID']}' target='_blank'>바로보기 <img src='/images/my_icon_zoom.png'></a>";
+        }
         $doc_title = $row['MEDICAL_DEPARTMENT'];
         $category = $row['TYPE_OF_INSURANCE'];
         $list[] = [
@@ -109,7 +82,33 @@ if($doc_type == 1) {
     }
 
 } else if($doc_type == 3) {
-
+    //  230602 - jinam23, 미구현코드 작업
+    $sql = "SELECT 
+            sfp.ID, sfc.TYPE_OF_INSURANCE, sfp.MEDICAL_DEPARTMENT, IFNULL(sfp.PRESCRIPTION_PDF, 0) 
+        FROM 
+            SF_CONTRACT sfc,
+            SF_PRESCRIPTION sfp
+        WHERE
+            sfc.PATIENT_ID = '{$member['salesforce_id']}' AND
+            sfc.ID = sfp.CONTRACT_ID 
+        ORDER BY
+            sfp.update_datetime DESC" ;
+    $rows = sql_fetch_all($sql);
+    foreach($rows as $row) {
+        $download_link = '' ;
+        $view_link = "" ;
+        if( $row['PRESCRIPTION_PDF']!=0 ) {
+            $view_link = "<a href='/mypage/inspection_png.php?ID={$row['ID']}' target='_blank'>바로보기 <img src='/images/my_icon_zoom.png'></a>";
+        }
+        $doc_title = $row['MEDICAL_DEPARTMENT'];
+        $category = $row['TYPE_OF_INSURANCE'];
+        $list[] = [
+            'category' => $category,
+            'doc_title' => $doc_title,
+            'download_link' => $download_link,
+            'view_link' => $view_link,
+        ];
+    }
 } else if($doc_type == 4) {
     $sql = "select * from patients where  salesforce_id ='{$member['salesforce_id']}' ";
 

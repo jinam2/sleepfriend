@@ -440,15 +440,16 @@ set_session('ss_personalpay_hash', '');
             <?php if ($is_kakaopay_use || $default['de_bank_use'] || $default['de_vbank_use'] || $default['de_iche_use'] || $default['de_card_use'] || $default['de_hp_use'] || $default['de_easy_pay_use'] || is_inicis_simple_pay()) { ?>
             <div id="m_sod_frm_paysel">
             <?php } ?>
-
+            <?php   //  230602 - jinam23 무통장,신카만 제외하고 주석 처리.  ?>
+            <!--
             <?php if($is_kakaopay_use) { $multi_settle++; // 카카오페이 ?>
             <input type="radio" id="od_settle_kakaopay" name="od_settle_case" value="KAKAOPAY" <?php echo $checked; ?>><label for="od_settle_kakaopay" class="payment-select-box kakaopay_icon">KAKAOPAY</label>
             <?php $checked = ''; } ?>
-
+            -->
             <?php if($default['de_bank_use']) { $multi_settle++; // 무통장입금 사용 ?>
             <input type="radio" id="od_settle_bank" name="od_settle_case" value="무통장" <?php echo $checked; ?>><label for="od_settle_bank" class="payment-select-box">무통장입금</label>
             <?php $checked = ''; } ?>
-
+            <!--
             <?php if($default['de_vbank_use']) { $multi_settle++; // 가상계좌 사용 ?>
             <input type="radio" id="od_settle_vbank" name="od_settle_case" value="가상계좌" <?php echo $checked; ?>><label for="od_settle_vbank" class="payment-select-box"><?php echo $escrow_title; ?>가상계좌</label>
             <?php $checked = ''; } ?>
@@ -460,15 +461,15 @@ set_session('ss_personalpay_hash', '');
             <?php if($default['de_hp_use']) { $multi_settle++; // 휴대폰 사용 ?>
             <input type="radio" id="od_settle_hp" name="od_settle_case" value="휴대폰" <?php echo $checked; ?>><label for="od_settle_hp" class="payment-select-box">휴대폰</label>
             <?php $checked = ''; } ?>
-
+            -->
             <?php if($default['de_card_use']) { $multi_settle++; // 신용카드 사용 ?>
             <input type="radio" id="od_settle_card" name="od_settle_case" value="신용카드" <?php echo $checked; ?>><label for="od_settle_card" class="payment-select-box">신용카드</label>
             <?php $checked = ''; } ?>
-
+            <!--
             <?php if($default['de_inicis_kakaopay_use']) { // 이니시스 카카오페이 ?>
             <input type="radio" id="od_settle_inicis_kakaopay" name="od_settle_case" value="inicis_kakaopay" <?php echo $checked; ?>><label for="od_settle_inicis_kakaopay" class="payment-select-box inicis_kakaopay">KG 이니시스 카카오페이</label>
             <?php $checked = ''; } ?>
-
+            -->
             <?php
             $easypay_prints = array();
             

@@ -73,7 +73,7 @@
         <ul class="document">
             <li><a href="/mypage/document.php?doc_type=1">표준계약서</a></li>
             <li><a href="/mypage/document.php?doc_type=2">의무기록사본 <br>(수면다원검사지)</a></li>
-            <li><a href="/mypage/document.php?doc_type=3">임대료 납입서</a></li>
+            <li><a href="/mypage/document.php?doc_type=3">처방전</a></li>
             <li><a href="/mypage/document.php?doc_type=4">데이터 리포트</a></li>
         </ul>
 

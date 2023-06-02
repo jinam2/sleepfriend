@@ -91,9 +91,13 @@
         <div class="status">
             <p>임대기간 <strong><?php echo $rental_period?></strong></p>
             <ul>
-                <?php foreach($list as $row) {?>
-                    <li><a href="/shop/item.php?it_id=<?php echo $row['it_id']; ?>" title="<?php echo $row['it_name']?>"><?=$row['thumb']?></a></li>
-                <?php } ?>
+                <?php 
+                //  230602 - jinam23 링크 변경 
+                foreach($list as $row) {
+                    echo '<li><a href="/mypage/contract.php" title="'.$row['it_name'].'">'.$row['thumb'].'</a></li>' ;
+                    /* <li><a href="/shop/item.php?it_id=<?php echo $row['it_id']; ?>" title="<?php echo $row['it_name']?>"><?=$row['thumb']?></a></li> */
+                } 
+                ?>
             </ul>
         </div>
 

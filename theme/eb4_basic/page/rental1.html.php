@@ -102,9 +102,9 @@ if(!$item) {
 					</p>
 				</div>
 			</div>
-
+    <?php   /**  230602 - jinam23, Myclose 링크적용  */ ?>
             <div class="btn">
-                <a class="myclose">확인</a>
+                <a class="myclose" href='/shop/item.php?it_id=<?php echo $item['it_id']; ?>'>확인</a>
                 <a href="/mypage/contract.php" class="go">계약 목록 보러가기</a>
             </div>
 
