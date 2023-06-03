@@ -51,7 +51,7 @@ if (!defined('_EYOOM_')) exit;
 .product-list-10 .rgba-banner-area {position:absolute;top:0;right:0}
 .product-list-10 .rgba-banner {height:18px;width:70px;line-height:18px;color:#fff;font-size:.6875rem;text-align:center;font-weight:400;position:relative;text-transform:uppercase;margin-bottom:1px}
 .product-list-10 .item-list:hover .product-name a {text-decoration:underline}
-.product-type-list .product-list-10 .item-list-wrap {width:50%}
+.product-type-list .product-list-10 .item-list-wrap {width:50%; height:370px;}
 .product-type-list .product-list-10 .product-img {position:absolute;top:0;left:0;overflow:hidden;background:#fff;width:160px}
 .product-type-list .product-list-10 .product-description {margin-left:175px;min-height:180px}
 @media (max-width:1199px) {

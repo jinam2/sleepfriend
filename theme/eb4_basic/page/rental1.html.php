@@ -46,7 +46,7 @@ if(!$item) {
             <form name="fupload" method="POST" action="/shop/ajax.rental.php"  enctype="multipart/form-data">
                 <input type="hidden" name="it_id" value="<?=$item['it_id']?>"/>
                 <input type="hidden" name="rental_type" value="<?=$rental_type?>"/>
-                <table>
+                <table style='table-layout: auto; width: 100%; table-layout: fixed;'>
                     <tr>
                         <th>신분증</th>
                         <td>
@@ -128,7 +128,7 @@ if(!$item) {
     function upload_file(e) {
         //처방 파일 업로드
         e.preventDefault();
-        debugger;
+        //debugger;
         var formData = new FormData();
         var it_id =$("input[name='it_id']").val();
         var rental_type =$("input[name='rental_type']").val();
