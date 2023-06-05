@@ -40,12 +40,15 @@ try {
 
     for($i = 1; $i <= 4; $i++) { //1:신분증, 2:처방전, 3:등록신청서, 4:수면다원검사결과지
         $_FILE = $_FILES["file{$i}"];
+        //  230605 - jinam23 - js에서 체크 
+        /** 
         if(!$_FILE) {
             if($i == 1) {
                 throw new Exception("신분증을 업로드 하세요.", 400);
             }
             continue;
         }
+        */
         $filename = $_FILE['name'];
         $filename  = get_safe_filename($filename);
         $tmp_file = $_FILE['tmp_name'];

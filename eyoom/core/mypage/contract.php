@@ -31,8 +31,8 @@ $page = (int)$_GET['page'];
 if (!$page) $page = 1;
 if (!$page_rows) $page_rows = 20;
 $from_record = ($page - 1) * $page_rows; // 시작 열을 구함
-
-$sql = "select * from SF_CONTRACT where PATIENT = '{$member['salesforce_id']}' order by create_datetime desc";
+//  230605 - jinam23 : create_datetime > START_DATE
+$sql = "SELECT * FROM SF_CONTRACT WHERE PATIENT = '{$member['salesforce_id']}' ORDER BY START_DATE DESC";
 $res = sql_query($sql, false);
 $list = array();
 

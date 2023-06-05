@@ -104,7 +104,7 @@ if(!$item) {
 			</div>
     <?php   /**  230602 - jinam23, Myclose 링크적용  */ ?>
             <div class="btn">
-                <a class="myclose" href='/shop/item.php?it_id=<?php echo $item['it_id']; ?>'>확인</a>
+                <a href='/shop/item.php?it_id=<?php echo $item['it_id']; ?>' class="myclose">확인</a>
                 <a href="/mypage/contract.php" class="go">계약 목록 보러가기</a>
             </div>
 
@@ -127,12 +127,16 @@ if(!$item) {
     });
     function upload_file(e) {
         //처방 파일 업로드
-        e.preventDefault();
+        // e.preventDefault();
         //debugger;
         var formData = new FormData();
         var it_id =$("input[name='it_id']").val();
         var rental_type =$("input[name='rental_type']").val();
 
+        if( !$("input[name='file1']")[0].files[0] ) {
+            alert("신분증을 업로드 하세요") ;
+            return false ;
+        }
         formData.append("it_id", it_id);
         formData.append("rental_type", rental_type);
         formData.append("file1", $("input[name='file1']")[0].files[0]);
@@ -150,6 +154,7 @@ if(!$item) {
             data: formData,
             async: false,
             success: function (response) {
+                console.log( response) ;
                 if(response['code'] != '200') {
                     alert(response['message']);
                     return;
