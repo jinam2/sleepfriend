@@ -1,4 +1,6 @@
 <?php
+phpinfo() ;
+exit ;
 /**
  *  test -jinam23
  *  API -pdf > decode > save

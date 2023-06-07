@@ -8,7 +8,7 @@ if (!defined('_EYOOM_')) exit;
 <style>
 .product-list-10 {margin-left:-10px;margin-right:-10px;}
 .product-list-10:after {content:"";display:block;clear:both}
-.product-list-10 .item-list-wrap {padding:0 10px; width:33.333%; float:left}
+.product-list-10 .item-list-wrap {padding:0 10px; width:33.333%; float:left; height:700px;}
 .product-list-10 .item-list {position:relative;-webkit-transition:all 0.2s ease-in-out;transition:all 0.2s ease-in-out; margin-bottom:100px;}
 .product-list-10 .product-img {position:relative;overflow:hidden;margin:0 0 0px;background:#fff;  border-radius:10px;}
 .product-list-10 .product-img-in {position:relative;overflow:hidden;width:100%}

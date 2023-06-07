@@ -104,10 +104,10 @@
         </div>
 
         <div class="frame">
-            <h3 class="line m_inner">이번달 청구 금액</h3>
+            <h3 class="line m_inner">최근 청구 금액</h3>
             <div class="bill m_inner">
                 <dl>
-                    <dt>렌탈 제품의 <?=$year_mon?> 청구 금액입니다.</dt>
+                    <dt>렌탈 제품의 납부내역이 있는 최근 <?=$invoice['LAST_YEARMON']?> 청구 금액입니다.</dt>
                     <dd>청구금액 <strong><?=number_format($invoice['PATIENT_PAYABLE'])?>원</strong> <a href="<?=$invoice_link?>" class="button">조회하기</a></dd>
                 </dl>
             </div>

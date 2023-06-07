@@ -107,6 +107,7 @@ if (file_exists($skin_file)) {
     $list->set_is_page(true);
     $list->set_order_by($order_by);
     $list->set_from_record($from_record);
+    $list->set_img_size(448, 448);
     $list->set_view('it_img', true);
     $list->set_view('it_id', false);
     $list->set_view('it_name', true);

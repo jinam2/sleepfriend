@@ -67,14 +67,20 @@ $count = count($list);
 
 
 //청구 정보
+//  230607- jinam23 - 수정.
+/*
 $before_7day = date("Y-m-d", strtotime("-7 day", time()));
 $today = date("Y-m-d");
+
 $year_mon = date("Y")."년 ".date("m")."월";
 //  jinam23 edited ORDER BY 
 $sql = "SELECT ifnull(sum(PATIENT_PAYABLE), 0) PATIENT_PAYABLE FROM SF_INVOICE WHERE PATIENT_ID = '{$member['salesforce_id']}' AND '{$today}' BETWEEN START_DATE and END_DATE ORDER BY update_datetime DESC";
 $invoice = sql_fetch($sql);
-
 $invoice_link = G5_URL."/mypage/invoice.php?fr_date={$before_7day}&to_date={$today}&period=30";
+*/
+$sql = "SELECT date_format(START_DATE, '%Y년%m월') AS LAST_YEARMON, PATIENT_PAYABLE FROM SF_INVOICE WHERE PATIENT_ID = '{$member['salesforce_id']}' ORDER BY START_DATE DESC LIMIT 0,1" ;
+$invoice = sql_fetch($sql);
+$invoice_link = G5_URL."/mypage/invoice.php?period=&fr_date=&to_date=&status=";
 
 /**
  * 사용자 프로그램

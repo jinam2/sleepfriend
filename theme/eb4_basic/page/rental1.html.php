@@ -132,17 +132,24 @@ if(!$item) {
         var formData = new FormData();
         var it_id =$("input[name='it_id']").val();
         var rental_type =$("input[name='rental_type']").val();
-
-        if( !$("input[name='file1']")[0].files[0] ) {
+        formData.append("it_id", it_id);
+        formData.append("rental_type", rental_type);
+        //  jinam23 - 사파리 버그 
+        if( $("input[name='file1']")[0].files[0] ) {
+            formData.append("file1", $("input[name='file1']")[0].files[0]);
+        } else {
             alert("신분증을 업로드 하세요") ;
             return false ;
         }
-        formData.append("it_id", it_id);
-        formData.append("rental_type", rental_type);
-        formData.append("file1", $("input[name='file1']")[0].files[0]);
-        formData.append("file2", $("input[name='file2']")[0].files[0]);
-        formData.append("file3", $("input[name='file3']")[0].files[0]);
-        formData.append("file4", $("input[name='file4']")[0].files[0]);
+        if( $("input[name='file2']")[0].files[0] ) {
+            formData.append("file2", $("input[name='file2']")[0].files[0]);
+        } 
+        if( $("input[name='file3']")[0].files[0] ) {
+            formData.append("file3", $("input[name='file3']")[0].files[0]);
+        } 
+        if( $("input[name='file4']")[0].files[0] ) {
+            formData.append("file4", $("input[name='file4']")[0].files[0]);
+        } 
 
         $.ajax({
             url: "/shop/ajax.rental.php",

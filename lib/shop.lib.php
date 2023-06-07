@@ -308,6 +308,8 @@ class item_list
             $sql_limit = " limit " . $this->from_record . " , " . ($this->list_mod * $this->list_row);
 
             $sql = $sql_select . $sql_common . $sql_where . $sql_order . $sql_limit;
+
+            echo "<script>console.log(\"".$sql."\");</script>" ;
             $result = sql_query($sql);
 
             if ($this->is_page) {
@@ -319,7 +321,7 @@ class item_list
 
         if( isset($result) && $result ){
             while ($row=sql_fetch_array($result)) {
-                
+          
                 if( isset($row['it_seo_title']) && ! $row['it_seo_title'] ){
                     shop_seo_title_update($row['it_id']);
                 }

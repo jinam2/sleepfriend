@@ -164,7 +164,7 @@
                     <dl><dt>주치의</dt><dd><?=$row['DOCTOR']?></dd></dl>
                     <dl><dt>발행일</dt><dd><?=$row['ISSUE_DATE']?></dd></dl>
                     <dl><dt>시작일</dt><dd><?=$row['START_DATE']?></dd></dl>
-                    <dl><dt>반료일</dt><dd><?=$row['END_DATE']?></dd></dl>
+                    <dl><dt>만료일</dt><dd><?=$row['END_DATE']?></dd></dl>
                     <dl><dt>처방값</dt><dd><?=$row['PRESCRIPTION_VALUE']?></dd></dl>
                     <dl><dt>보기</dt><dd><?=$row['pdf_link']?></dd></dl>
                 </li>
