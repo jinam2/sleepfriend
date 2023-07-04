@@ -89,23 +89,22 @@
 		</div>
 	</div>
 
-
-
 	<!-- 모바일 하단 메뉴 -->
 	<div id="bottom_nav">
 		<ul>
-			<li><a href="/"><img src="/images/m_menu1.png"><span>홈</span></a></li>
-			<li><a href="/mypage/"><img src="/images/m_menu2.png"><span>마이페이지</span></a></li>
-			<li class="btn_sns_share">
+			<li><a href="#" id='CheckDeviceHome'><img src="/images/m_new_menu1.png"><span>홈</span></a></li>
+			<li><a href="/shop/"><img src="/images/m_new_menu2.png"><span>쇼핑몰</span></a></li>
+			<li><a href="/mypage/"><img src="/images/m_new_menu3.png"><span>마이페이지</span></a></li>
+			<!--li class="btn_sns_share">
 				<div class="sns_area">
 					<a href="#" class="share-facebook"><i class="xi-facebook"></i></a>
 					<a href="#" class="share-twitter"><i class="xi-twitter"></i></a>
 					<a href="#" class="share-kakao"><i class="xi-kakaotalk"></i></a>
 					<a href="#" class="share-link"><i class="xi-link"></i></a>
 				</div>
-				<img src="/images/m_menu3.png"><span>공유하기</span>
-			</li>
-			<li><a href="/shop/"><img src="/images/m_menu4.png"><span>쇼핑몰</span></a></li>
+				<img src="/images/m_new_menu3.png"><span>공유하기</span>
+			</li-->
+			<li><a href="/page/?pid=callcenter"><img src="/images/m_new_menu4.png"><span>콜센터</span></a></li>
 		</ul>
 	</div>
 
@@ -118,6 +117,15 @@
 	            if( container.has(e.target).length === 0)
 	            container.hide();
 	        });
+			<?php 	/**	230704 - jinam23 - device check Js added */	?>
+			$('#CheckDeviceHome').click( function() {
+				var checkHome = navigator.userAgent.includes("SleepFriend") ;
+				if( !checkHome ) {
+					document.location.href = '/' ;
+				} else {
+					document.location.href = '/page/?pid=appmain' ;
+				}
+			});
 	        </script>
 
 <style>
